@@ -20,3 +20,11 @@ To run, the following should be done.
 - Import the package *StyleTransfer* 
 - Open 2D_Scene
 
+To apply this method to your own scene, do the following:
+- Find all the textures being used in the scene.
+- Apply style transfer to the selected textures. You can use the pytorchRunner script from above.
+- Place the stylised textures in the folder "Resources/(Custom_Path)/(Style_Name)/"
+- Create a game obejct with the Style Manager script. (You should remove the references to the debug script if you do not intend to use it.)
+- Configure the component with the path to the textures, and the style names.
+- Add the Sprite and/or Material reference script, and any style renderer script needed for the scene.
+- If you are using Style Animation, select "Save Animation Curves" from the context menu.
